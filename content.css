@@ -1,0 +1,257 @@
+.slideshow_text {
+  position: absolute;
+  top: -550px;
+  left: 50%;
+  z-index: 1000;
+  color: #ffffff; 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  transform: translate(-50%,-50%);
+}
+.slideshow_text p {
+  font-size: 28px !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-shadow: 1px 2px 3px #1c598d !important;
+}
+.slideshow_text span {
+  color: #fff !important;
+  font-family: Raleway, sans-serif !important;
+  font-size: 60px !important;
+  font-weight: bold !important;
+  text-shadow: 1px 2px 3px #1c598d !important;
+}
+.slide_image_wrap {
+  background-position: top;
+  background-size: cover;
+}
+/* スライドショーレスポンシブ */
+@media only screen and (max-width: 1050px) {
+  .slide_image_wrap {
+    height: 70%;
+  }
+  .wrapper {
+    padding-top: 350px !important;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .slide_image_wrap {
+    height: 50%;
+  }
+  .wrapper {
+    padding-top: 250px !important;
+  }
+}
+
+
+/* スライドショー追加によるその他の編集 */
+.header {
+    position: relative;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 15px 0;
+    z-index: 1000;
+}
+
+
+/* ここは会社ロゴに対して直接的にアプローチしているCSSです。 */
+.header img {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1051px) { 
+  .wrapper {
+    padding-top: 500px !important;
+  }
+}
+.contents_inner {
+  margin: 0;
+  width: 100% !important;
+  position: relative;
+  /*z-index: 1000;*/
+  background-color: #ffffff;
+  padding: 0;
+}
+.contents_caption {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1000;
+  padding: 40px 0 20px;
+/* この下記述はフリーページのタイトルが出てくることに対して消すCSSです。 */
+  display: none;
+}
+.text_group {
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+.free_wrap {
+  padding: 0;
+}
+.message_size {
+  width: 770px;
+}
+.text-lg {
+  font-size: inherit;
+}
+
+/* レスポンシブ対応 */
+@media only screen and (max-width: 1050px) {
+  .slideshow_text {
+    top: -530px;
+  }
+  .slideshow_text p {
+    font-size: 3vw !important;
+    margin-bottom: 1.5625vw;
+  }
+  .slideshow_text span {
+    font-size: 5vw !important;
+  }
+  .block {
+    margin-top: 0;
+  }
+  .message_size {
+    width: 620px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    padding-top: 0px !important;
+  }
+  .header {
+    padding-top: 15px;
+  }
+  .slideshow_area {
+    display: none;
+  }
+  .mx-8 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .flex {
+    display: block;
+  }
+  .flex_box {
+    margin-right: 0;
+  }
+  .text-xl {
+    font-size: 1rem;
+  }
+  .title_grope .title {
+    font-size: 1.25rem;
+    padding: .25rem 1rem;
+    border-left-width: .5rem;
+  }
+  .title_grope .title_bottom {
+    margin: .5rem 1rem;
+  }
+  .text_sp {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .border_left {
+    margin-left: .25rem;
+  }
+  .message_size {
+    max-width:100%;
+  }
+}
+
+/* コンテンツCSS */
+.title {
+  box-sizing: border-box;
+  word-break: break-all;
+  margin-top: 0px;
+  font-size: 2rem;
+  border-left: 1rem solid #ff7171;
+  padding: .5rem 2rem;
+  border-bottom: none;
+  text-align: left;
+}
+.title_bottom {
+  border-bottom: 1px solid #cecece;
+  margin: 1rem 2rem; 
+}
+.align-items {
+  align-items: center;
+}
+.flex_box {
+  border: 1px solid #d6d6d6;
+  max-width: 400px;
+}
+.border_bottom {
+  border-bottom: 1px solid #d6d6d6;
+}
+.box_size {
+  margin: 0 10px;
+  padding: 1rem;
+  color: #ff7171;
+}
+.banner_size {
+  max-width: 500px;
+}
+.border_left {
+  height: fit-content;
+  border-left: .25rem solid #ff7171;
+  padding-left: .75rem;
+}
+.flex_img {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 0 !important;
+}
+.flex_img_set {
+  width: 85px;
+  height: 66px;
+  margin-bottom: 0 !important;
+}
+.contents_about {
+  padding-bottom: 2rem;
+}
+@media only screen and (max-width: 480px) {
+  .flex_img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0 !important;
+  }
+  .flex_img_set {
+    width: 40px;
+    height: 31px;
+    margin-bottom: 0 !important;
+  }
+  .sp_flex {
+    display: flex;
+  }
+  .banner_size {
+    margin: 2rem auto;
+  }
+  .contents_about {
+    padding-bottom: 0;
+  }
+  .about_wrap {
+    padding-bottom: 1.25rem;
+  }
+  .flex_box {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .banner_size {
+    max-width: 300px;
+    
+  }
+  .flex_box {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content {
+    align-items: center;
+    margin: 2rem auto;
+  }
+  .free_wrap img {
+    margin-bottom: 0;
+  }
+}
